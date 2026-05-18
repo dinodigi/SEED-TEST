@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0.0",
+  "id": "T-007",
+  "title": "Build document upload pipeline with PDF/DOCX parsing",
+  "tags": [
+    "documents",
+    "upload",
+    "parsing"
+  ],
+  "epic_id": "E-003",
+  "status": "todo",
+  "estimate": "L",
+  "description": "Implement drag-and-drop file upload for PDF and DOCX files. Server-side parsing extracts raw text. Files are stored and associated with the matter. Upload status is tracked (uploading, processing, ready, failed).",
+  "acceptance_criteria": [
+    {
+      "text": "Drag-and-drop upload UI accepts PDF and DOCX files up to 50 MB",
+      "done": false
+    },
+    {
+      "text": "MIME type validated server-side (reject non PDF/DOCX)",
+      "done": false
+    },
+    {
+      "text": "pdf-parse extracts text from text-native PDFs",
+      "done": false
+    },
+    {
+      "text": "mammoth extracts text from DOCX files",
+      "done": false
+    },
+    {
+      "text": "Document record created in Postgres with status tracking (uploading → processing → ready | failed)",
+      "done": false
+    },
+    {
+      "text": "Documents tab on matter detail lists all uploaded documents with status badges",
+      "done": false
+    }
+  ],
+  "depends_on": [
+    {
+      "id": "T-005",
+      "type": "hard"
+    }
+  ],
+  "blocks": [
+    "T-008"
+  ],
+  "plan": {
+    "steps": [
+      "Create POST /api/documents/upload route handler",
+      "Install pdf-parse and mammoth",
+      "Implement lib/parsers/pdf.ts and lib/parsers/docx.ts",
+      "Create DocumentUpload component with react-dropzone",
+      "Store file to /tmp (v1) and save Document record",
+      "Update document status through processing lifecycle",
+      "Build DocumentList component for the Documents tab"
+    ],
+    "files_to_touch": [
+      "app/api/documents/upload/route.ts",
+      "lib/parsers/pdf.ts",
+      "lib/parsers/docx.ts",
+      "components/documents/DocumentUpload.tsx",
+      "components/documents/DocumentList.tsx"
+    ],
+    "risks": [
+      "Scanned PDFs without OCR will produce empty text — document this limitation clearly in UI",
+      "/tmp storage is ephemeral on Replit — flag for persistent storage upgrade in v1.1"
+    ],
+    "estimated_effort": "L"
+  },
+  "chat_path": ".os/02_state/tasks/T-007/chat.jsonl",
+  "created_at": "2026-05-18T18:49:54.637Z",
+  "updated_at": "2026-05-18T18:49:54.637Z"
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0.0",
+  "session_id": "4bc7e94e-f937-4b9c-b805-aba263a93432",
+  "started_at": "2026-05-18T17:36:12.210Z",
+  "completed_at": "2026-05-18T18:46:54.026Z",
+  "completed_by": "user_3DqPzch3whZfWLrVNlDBo0lwk9J",
+  "answers": {
+    "who": "Law firms, litigation teams, solo attorneys",
+    "name": "LexCore AI",
+    "what": "AI-native legal case management and document intelligence platform",
+    "framework": "next",
+    "auth_needed": [],
+    "mvp_features": [],
+    "project_type": "web-app",
+    "deploy_target": "replit"
+  },
+  "trace": [
+    {
+      "ts": "2026-05-18T17:36:40.717Z",
+      "question_id": "project_type"
+    },
+    {
+      "ts": "2026-05-18T17:38:16.138Z",
+      "question_id": "project_type"
+    },
+    {
+      "ts": "2026-05-18T18:15:30.341Z",
+      "question_id": "what"
+    },
+    {
+      "ts": "2026-05-18T18:15:42.554Z",
+      "question_id": "who"
+    },
+    {
+      "ts": "2026-05-18T18:15:59.801Z",
+      "question_id": "framework"
+    },
+    {
+      "ts": "2026-05-18T18:16:31.183Z",
+      "question_id": "auth_needed"
+    },
+    {
+      "ts": "2026-05-18T18:16:31.815Z",
+      "question_id": "auth_needed"
+    },
+    {
+      "ts": "2026-05-18T18:17:15.137Z",
+      "question_id": "deploy_target"
+    },
+    {
+      "ts": "2026-05-18T18:19:30.943Z",
+      "question_id": "mvp_features"
+    },
+    {
+      "ts": "2026-05-18T18:19:31.557Z",
+      "question_id": "mvp_features"
+    },
+    {
+      "ts": "2026-05-18T18:19:48.894Z",
+      "question_id": "name"
+    }
+  ]
+}

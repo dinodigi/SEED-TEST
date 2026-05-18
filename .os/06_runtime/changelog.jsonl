@@ -1,0 +1,14 @@
+{"ts":"2026-05-18T18:49:54.637Z","type":"task.created","summary":"Task created: T-001 — Configure Replit environment (.replit, replit.nix, env vars)","by":"agent"}
+{"ts":"2026-05-18T18:49:54.637Z","type":"task.created","summary":"Task created: T-002 — Bootstrap Next.js 14 app with TypeScript strict, Tailwind, and shadcn/ui","by":"agent"}
+{"ts":"2026-05-18T18:49:54.637Z","type":"task.created","summary":"Task created: T-003 — Integrate Clerk authentication with middleware and user sync webhook","by":"agent"}
+{"ts":"2026-05-18T18:49:54.637Z","type":"task.created","summary":"Task created: T-004 — Define Prisma schema and run initial database migration","by":"agent"}
+{"ts":"2026-05-18T18:49:54.637Z","type":"task.created","summary":"Task created: T-005 — Build matter creation and management dashboard","by":"agent"}
+{"ts":"2026-05-18T18:49:54.637Z","type":"task.created","summary":"Task created: T-006 — Implement task and deadline tracking per matter","by":"agent"}
+{"ts":"2026-05-18T18:49:54.637Z","type":"task.created","summary":"Task created: T-007 — Build document upload pipeline with PDF/DOCX parsing","by":"agent"}
+{"ts":"2026-05-18T18:49:54.637Z","type":"task.created","summary":"Task created: T-008 — Implement AI extraction pipeline (parties, timeline, facts, obligations, risks)","by":"agent"}
+{"ts":"2026-05-18T18:49:54.637Z","type":"task.created","summary":"Task created: T-009 — Build embedding pipeline and pgvector storage for document chunks","by":"agent"}
+{"ts":"2026-05-18T18:49:54.637Z","type":"task.created","summary":"Task created: T-010 — Implement RAG query endpoint and chat UI with source citations","by":"agent"}
+{"ts":"2026-05-18T18:49:54.637Z","type":"task.created","summary":"Task created: T-011 — Add matter member invite flow with role assignment","by":"agent"}
+{"ts":"2026-05-18T18:49:54.637Z","type":"task.created","summary":"Task created: T-012 — Polish: error boundaries, loading states, empty states, and rate limiting","by":"agent"}
+{"ts":"2026-05-18T18:49:59.799Z","type":"project.bootstrapped","summary":"Project bootstrapped: 17 files, 12 tasks, 5 epics","by":"user_3DqPzch3whZfWLrVNlDBo0lwk9J"}
+{"ts":"2026-05-18T18:50:00.017Z","type":"workflow.completed","summary":"Workflow complete: bootstrap","by":"agent"}

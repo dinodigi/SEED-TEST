@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0.0",
+  "id": "T-006",
+  "title": "Implement task and deadline tracking per matter",
+  "tags": [
+    "tasks",
+    "matters",
+    "frontend"
+  ],
+  "epic_id": "E-002",
+  "status": "todo",
+  "estimate": "M",
+  "description": "Build task creation, listing, status updates, and due-date tracking within a matter. Tasks can be assigned to matter members. Overdue tasks are visually flagged.",
+  "acceptance_criteria": [
+    {
+      "text": "Tasks tab on matter detail lists all tasks with status, due date, and assignee",
+      "done": false
+    },
+    {
+      "text": "Create task form captures title, description, due date, and assignee (matter member)",
+      "done": false
+    },
+    {
+      "text": "Task status can be updated inline (Todo → In Progress → Done)",
+      "done": false
+    },
+    {
+      "text": "Overdue tasks (past due date, not done) are visually highlighted in red",
+      "done": false
+    },
+    {
+      "text": "Only attorneys and paralegals can create/edit tasks; viewers see read-only",
+      "done": false
+    }
+  ],
+  "depends_on": [
+    {
+      "id": "T-005",
+      "type": "hard"
+    }
+  ],
+  "blocks": [],
+  "plan": {
+    "steps": [
+      "Build TaskList and TaskCard components",
+      "Implement createTask, updateTaskStatus, deleteTask server actions",
+      "Add due date badge with overdue detection",
+      "Add assignee selector populated from matter members",
+      "Enforce RBAC: viewer role cannot mutate tasks"
+    ],
+    "files_to_touch": [
+      "components/matters/TaskList.tsx",
+      "components/matters/TaskCard.tsx",
+      "app/actions/tasks.ts"
+    ],
+    "risks": [],
+    "estimated_effort": "M"
+  },
+  "chat_path": ".os/02_state/tasks/T-006/chat.jsonl",
+  "created_at": "2026-05-18T18:49:54.637Z",
+  "updated_at": "2026-05-18T18:49:54.637Z"
+}

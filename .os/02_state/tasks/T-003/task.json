@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0.0",
+  "id": "T-003",
+  "title": "Integrate Clerk authentication with middleware and user sync webhook",
+  "tags": [
+    "auth",
+    "clerk",
+    "security"
+  ],
+  "epic_id": "E-001",
+  "status": "todo",
+  "estimate": "M",
+  "description": "Install and configure Clerk for Next.js. Protect all dashboard and API routes via middleware. Implement the Clerk webhook handler to sync user.created and user.updated events to the Postgres User table.",
+  "acceptance_criteria": [
+    {
+      "text": "Clerk middleware protects all /dashboard/* and /api/* routes",
+      "done": false
+    },
+    {
+      "text": "Sign-in and sign-up pages use Clerk hosted UI or embedded components",
+      "done": false
+    },
+    {
+      "text": "POST /api/webhooks/clerk syncs user.created and user.updated to the User table",
+      "done": false
+    },
+    {
+      "text": "Authenticated user ID is accessible in server components and API routes",
+      "done": false
+    },
+    {
+      "text": "Google OAuth and magic-link enabled in Clerk dashboard",
+      "done": false
+    }
+  ],
+  "depends_on": [
+    {
+      "id": "T-002",
+      "type": "hard"
+    }
+  ],
+  "blocks": [
+    "T-005"
+  ],
+  "plan": {
+    "steps": [
+      "Install @clerk/nextjs",
+      "Wrap root layout with <ClerkProvider>",
+      "Create middleware.ts with authMiddleware protecting dashboard and API routes",
+      "Create app/(auth)/sign-in and sign-up pages",
+      "Create app/api/webhooks/clerk/route.ts with Svix signature verification",
+      "Implement user upsert to Postgres on webhook events"
+    ],
+    "files_to_touch": [
+      "middleware.ts",
+      "app/layout.tsx",
+      "app/(auth)/sign-in/page.tsx",
+      "app/(auth)/sign-up/page.tsx",
+      "app/api/webhooks/clerk/route.ts",
+      "lib/auth/clerk.ts"
+    ],
+    "risks": [
+      "Webhook secret must be set in both Clerk dashboard and Replit Secrets",
+      "Svix dependency required for webhook verification"
+    ],
+    "estimated_effort": "M"
+  },
+  "chat_path": ".os/02_state/tasks/T-003/chat.jsonl",
+  "created_at": "2026-05-18T18:49:54.637Z",
+  "updated_at": "2026-05-18T18:49:54.637Z"
+}

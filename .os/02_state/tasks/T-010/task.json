@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0.0",
+  "id": "T-010",
+  "title": "Implement RAG query endpoint and chat UI with source citations",
+  "tags": [
+    "ai",
+    "rag",
+    "chat",
+    "frontend"
+  ],
+  "epic_id": "E-004",
+  "status": "todo",
+  "estimate": "L",
+  "description": "Build the streaming RAG endpoint that embeds a user question, retrieves top-k relevant chunks from the matter's documents, and generates a GPT-4o answer with source citations. Display in a chat interface on the matter page.",
+  "acceptance_criteria": [
+    {
+      "text": "POST /api/chat/[matterId] accepts a question and returns a streamed response",
+      "done": false
+    },
+    {
+      "text": "Query is scoped strictly to the current matter's document chunks",
+      "done": false
+    },
+    {
+      "text": "Response includes inline citations referencing source document and chunk",
+      "done": false
+    },
+    {
+      "text": "Chat UI shows streamed response in real time with a typing indicator",
+      "done": false
+    },
+    {
+      "text": "Conversation history stored in ChatMessage table",
+      "done": false
+    },
+    {
+      "text": "Rate limited to 10 requests per minute per user",
+      "done": false
+    }
+  ],
+  "depends_on": [
+    {
+      "id": "T-009",
+      "type": "hard"
+    }
+  ],
+  "blocks": [],
+  "plan": {
+    "steps": [
+      "Install ai (Vercel AI SDK) and @ai-sdk/openai",
+      "Create lib/ai/rag.ts: embed question, retrieve chunks, build context, stream response",
+      "Create app/api/chat/[matterId]/route.ts as a streaming route handler",
+      "Add rate limiting middleware using upstash/ratelimit or a simple in-memory counter for v1",
+      "Build components/chat/ChatInterface.tsx using Vercel AI SDK useChat hook",
+      "Persist question + answer + cited chunk IDs to ChatMessage table"
+    ],
+    "files_to_touch": [
+      "lib/ai/rag.ts",
+      "app/api/chat/[matterId]/route.ts",
+      "components/chat/ChatInterface.tsx",
+      "app/actions/chat.ts"
+    ],
+    "risks": [
+      "Context window limits — top-k chunk selection must fit within GPT-4o context; implement token budget",
+      "Streaming + Prisma async writes — ensure conversation save doesn't block the stream"
+    ],
+    "estimated_effort": "L"
+  },
+  "chat_path": ".os/02_state/tasks/T-010/chat.jsonl",
+  "created_at": "2026-05-18T18:49:54.637Z",
+  "updated_at": "2026-05-18T18:49:54.637Z"
+}

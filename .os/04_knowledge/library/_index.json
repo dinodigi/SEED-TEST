@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "categories": [
+    {
+      "id": "auth",
+      "name": "Authentication",
+      "entries": [
+        "README.md",
+        "magic-link.md",
+        "passkeys.md",
+        "oauth.md"
+      ]
+    },
+    {
+      "id": "file-uploads",
+      "name": "File uploads",
+      "entries": [
+        "README.md"
+      ]
+    },
+    {
+      "id": "ai-features",
+      "name": "AI features",
+      "entries": [
+        "README.md",
+        "streaming-ui.md"
+      ]
+    }
+  ]
+}

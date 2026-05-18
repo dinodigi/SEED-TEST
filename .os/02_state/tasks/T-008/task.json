@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0.0",
+  "id": "T-008",
+  "title": "Implement AI extraction pipeline (parties, timeline, facts, obligations, risks)",
+  "tags": [
+    "ai",
+    "extraction",
+    "openai"
+  ],
+  "epic_id": "E-003",
+  "status": "todo",
+  "estimate": "L",
+  "description": "Build the OpenAI-powered structured extraction pipeline. After a document is parsed, trigger extraction using GPT-4o with function calling. Validate output with Zod. Persist to DocumentExtraction table. Display extracted intelligence on the document detail page.",
+  "acceptance_criteria": [
+    {
+      "text": "Extraction triggered automatically after successful document parsing",
+      "done": false
+    },
+    {
+      "text": "GPT-4o extracts: parties (name, role), timeline events (date, description), key facts, obligations, risk flags",
+      "done": false
+    },
+    {
+      "text": "Extraction output validated with Zod schema before persisting",
+      "done": false
+    },
+    {
+      "text": "DocumentExtraction record created/updated in Postgres",
+      "done": false
+    },
+    {
+      "text": "Document detail page shows extraction results in structured panels",
+      "done": false
+    },
+    {
+      "text": "Extraction failures are logged and document status set to 'failed' with user-visible message",
+      "done": false
+    }
+  ],
+  "depends_on": [
+    {
+      "id": "T-007",
+      "type": "hard"
+    }
+  ],
+  "blocks": [
+    "T-009"
+  ],
+  "plan": {
+    "steps": [
+      "Install openai SDK",
+      "Create lib/ai/extraction.ts with structured extraction prompt and Zod output schema",
+      "Use OpenAI function calling / structured outputs to guarantee JSON shape",
+      "Create lib/ai/pipeline.ts to orchestrate: parse → extract → embed",
+      "Build document detail page with extraction panels (Parties, Timeline, Facts, Obligations, Risks)",
+      "Add error handling with status updates on failure"
+    ],
+    "files_to_touch": [
+      "lib/ai/extraction.ts",
+      "lib/ai/pipeline.ts",
+      "app/(dashboard)/matters/[id]/documents/[docId]/page.tsx"
+    ],
+    "risks": [
+      "GPT-4o rate limits on large documents — implement chunked extraction for docs >8k tokens",
+      "Extraction cost — log token usage per document for future billing baseline"
+    ],
+    "estimated_effort": "L"
+  },
+  "chat_path": ".os/02_state/tasks/T-008/chat.jsonl",
+  "created_at": "2026-05-18T18:49:54.637Z",
+  "updated_at": "2026-05-18T18:49:54.637Z"
+}

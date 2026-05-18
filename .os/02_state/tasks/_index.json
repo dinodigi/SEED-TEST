@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0.0",
+  "columns": {
+    "backlog": [],
+    "todo": [
+      "T-001",
+      "T-002",
+      "T-003",
+      "T-004",
+      "T-005",
+      "T-006",
+      "T-007",
+      "T-008",
+      "T-009",
+      "T-010",
+      "T-011",
+      "T-012"
+    ],
+    "doing": [],
+    "review": [],
+    "done": [],
+    "blocked": []
+  },
+  "tasks": [
+    {
+      "id": "T-001",
+      "title": "Configure Replit environment (.replit, replit.nix, env vars)",
+      "status": "todo",
+      "tags": [
+        "infra",
+        "replit",
+        "setup"
+      ],
+      "epic_id": "E-001",
+      "estimate": "S",
+      "blocked": false,
+      "has_plan": true
+    },
+    {
+      "id": "T-002",
+      "title": "Bootstrap Next.js 14 app with TypeScript strict, Tailwind, and shadcn/ui",
+      "status": "todo",
+      "tags": [
+        "setup",
+        "frontend",
+        "dx"
+      ],
+      "epic_id": "E-001",
+      "estimate": "M",
+      "blocked": true,
+      "has_plan": true
+    },
+    {
+      "id": "T-003",
+      "title": "Integrate Clerk authentication with middleware and user sync webhook",
+      "status": "todo",
+      "tags": [
+        "auth",
+        "clerk",
+        "security"
+      ],
+      "epic_id": "E-001",
+      "estimate": "M",
+      "blocked": true,
+      "has_plan": true
+    },
+    {
+      "id": "T-004",
+      "title": "Define Prisma schema and run initial database migration",
+      "status": "todo",
+      "tags": [
+        "database",
+        "prisma",
+        "schema"
+      ],
+      "epic_id": "E-001",
+      "estimate": "M",
+      "blocked": true,
+      "has_plan": true
+    },
+    {
+      "id": "T-005",
+      "title": "Build matter creation and management dashboard",
+      "status": "todo",
+      "tags": [
+        "frontend",
+        "matters",
+        "crud"
+      ],
+      "epic_id": "E-002",
+      "estimate": "L",
+      "blocked": true,
+      "has_plan": true
+    },
+    {
+      "id": "T-006",
+      "title": "Implement task and deadline tracking per matter",
+      "status": "todo",
+      "tags": [
+        "tasks",
+        "matters",
+        "frontend"
+      ],
+      "epic_id": "E-002",
+      "estimate": "M",
+      "blocked": true,
+      "has_plan": true
+    },
+    {
+      "id": "T-007",
+      "title": "Build document upload pipeline with PDF/DOCX parsing",
+      "status": "todo",
+      "tags": [
+        "documents",
+        "upload",
+        "parsing"
+      ],
+      "epic_id": "E-003",
+      "estimate": "L",
+      "blocked": true,
+      "has_plan": true
+    },
+    {
+      "id": "T-008",
+      "title": "Implement AI extraction pipeline (parties, timeline, facts, obligations, risks)",
+      "status": "todo",
+      "tags": [
+        "ai",
+        "extraction",
+        "openai"
+      ],
+      "epic_id": "E-003",
+      "estimate": "L",
+      "blocked": true,
+      "has_plan": true
+    },
+    {
+      "id": "T-009",
+      "title": "Build embedding pipeline and pgvector storage for document chunks",
+      "status": "todo",
+      "tags": [
+        "ai",
+        "embeddings",
+        "pgvector",
+        "rag"
+      ],
+      "epic_id": "E-004",
+      "estimate": "M",
+      "blocked": true,
+      "has_plan": true
+    },
+    {
+      "id": "T-010",
+      "title": "Implement RAG query endpoint and chat UI with source citations",
+      "status": "todo",
+      "tags": [
+        "ai",
+        "rag",
+        "chat",
+        "frontend"
+      ],
+      "epic_id": "E-004",
+      "estimate": "L",
+      "blocked": true,
+      "has_plan": true
+    },
+    {
+      "id": "T-011",
+      "title": "Add matter member invite flow with role assignment",
+      "status": "todo",
+      "tags": [
+        "auth",
+        "matters",
+        "rbac",
+        "invites"
+      ],
+      "epic_id": "E-002",
+      "estimate": "M",
+      "blocked": true,
+      "has_plan": true
+    },
+    {
+      "id": "T-012",
+      "title": "Polish: error boundaries, loading states, empty states, and rate limiting",
+      "status": "todo",
+      "tags": [
+        "polish",
+        "ux",
+        "reliability"
+      ],
+      "epic_id": "E-005",
+      "estimate": "M",
+      "blocked": false,
+      "has_plan": true
+    }
+  ],
+  "next_id": "T-013"
+}

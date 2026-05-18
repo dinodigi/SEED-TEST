@@ -1,0 +1,20 @@
+{"ts":"2026-05-18T18:46:54.230Z","type":"workflow.started","actor":"agent","target":"bootstrap","playbook":"bootstrap"}
+{"ts":"2026-05-18T18:49:54.637Z","type":"epic.created","actor":"agent","target":"E-001","summary":"Foundation & Infrastructure"}
+{"ts":"2026-05-18T18:49:54.637Z","type":"epic.created","actor":"agent","target":"E-002","summary":"Case Management Core"}
+{"ts":"2026-05-18T18:49:54.637Z","type":"epic.created","actor":"agent","target":"E-003","summary":"Document Ingestion & AI Extraction"}
+{"ts":"2026-05-18T18:49:54.637Z","type":"epic.created","actor":"agent","target":"E-004","summary":"Document Q&A (RAG)"}
+{"ts":"2026-05-18T18:49:54.637Z","type":"epic.created","actor":"agent","target":"E-005","summary":"Polish & Launch Prep"}
+{"ts":"2026-05-18T18:49:54.637Z","type":"task.created","actor":"agent","target":"T-001","title":"Configure Replit environment (.replit, replit.nix, env vars)","epic_id":"E-001"}
+{"ts":"2026-05-18T18:49:54.637Z","type":"task.created","actor":"agent","target":"T-002","title":"Bootstrap Next.js 14 app with TypeScript strict, Tailwind, and shadcn/ui","epic_id":"E-001"}
+{"ts":"2026-05-18T18:49:54.637Z","type":"task.created","actor":"agent","target":"T-003","title":"Integrate Clerk authentication with middleware and user sync webhook","epic_id":"E-001"}
+{"ts":"2026-05-18T18:49:54.637Z","type":"task.created","actor":"agent","target":"T-004","title":"Define Prisma schema and run initial database migration","epic_id":"E-001"}
+{"ts":"2026-05-18T18:49:54.637Z","type":"task.created","actor":"agent","target":"T-005","title":"Build matter creation and management dashboard","epic_id":"E-002"}
+{"ts":"2026-05-18T18:49:54.637Z","type":"task.created","actor":"agent","target":"T-006","title":"Implement task and deadline tracking per matter","epic_id":"E-002"}
+{"ts":"2026-05-18T18:49:54.637Z","type":"task.created","actor":"agent","target":"T-007","title":"Build document upload pipeline with PDF/DOCX parsing","epic_id":"E-003"}
+{"ts":"2026-05-18T18:49:54.637Z","type":"task.created","actor":"agent","target":"T-008","title":"Implement AI extraction pipeline (parties, timeline, facts, obligations, risks)","epic_id":"E-003"}
+{"ts":"2026-05-18T18:49:54.637Z","type":"task.created","actor":"agent","target":"T-009","title":"Build embedding pipeline and pgvector storage for document chunks","epic_id":"E-004"}
+{"ts":"2026-05-18T18:49:54.637Z","type":"task.created","actor":"agent","target":"T-010","title":"Implement RAG query endpoint and chat UI with source citations","epic_id":"E-004"}
+{"ts":"2026-05-18T18:49:54.637Z","type":"task.created","actor":"agent","target":"T-011","title":"Add matter member invite flow with role assignment","epic_id":"E-002"}
+{"ts":"2026-05-18T18:49:54.637Z","type":"task.created","actor":"agent","target":"T-012","title":"Polish: error boundaries, loading states, empty states, and rate limiting","epic_id":"E-005"}
+{"ts":"2026-05-18T18:49:59.799Z","type":"project.bootstrapped","actor":"user_3DqPzch3whZfWLrVNlDBo0lwk9J","target":"ce3ed2e6-c233-44ed-813b-c198d8f13626","files_generated":17,"tasks_seeded":12,"epics_seeded":5,"library_entries_snapshotted":7}
+{"ts":"2026-05-18T18:50:00.017Z","type":"workflow.completed","actor":"agent","target":"bootstrap","playbook":"bootstrap","duration_ms":185794}

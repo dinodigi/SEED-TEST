@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0.0",
+  "id": "T-002",
+  "title": "Bootstrap Next.js 14 app with TypeScript strict, Tailwind, and shadcn/ui",
+  "tags": [
+    "setup",
+    "frontend",
+    "dx"
+  ],
+  "epic_id": "E-001",
+  "status": "todo",
+  "estimate": "M",
+  "description": "Initialise the Next.js 14 App Router project with strict TypeScript, configure Tailwind CSS, install and configure shadcn/ui with a neutral theme. Set up path aliases and the validated env.ts config module.",
+  "acceptance_criteria": [
+    {
+      "text": "TypeScript strict mode enabled in tsconfig.json",
+      "done": false
+    },
+    {
+      "text": "Tailwind CSS configured with custom design tokens for legal/professional aesthetic",
+      "done": false
+    },
+    {
+      "text": "shadcn/ui initialised with at least Button, Card, Dialog, Input, Badge components installed",
+      "done": false
+    },
+    {
+      "text": "env.ts validates all required env vars at startup using Zod",
+      "done": false
+    },
+    {
+      "text": "Path alias `@/` resolves to `/src` or project root",
+      "done": false
+    }
+  ],
+  "depends_on": [
+    {
+      "id": "T-001",
+      "type": "hard"
+    }
+  ],
+  "blocks": [
+    "T-003",
+    "T-004"
+  ],
+  "plan": {
+    "steps": [
+      "Run `npx create-next-app@latest` with TypeScript, App Router, Tailwind options",
+      "Enable strict mode in tsconfig.json",
+      "Run `npx shadcn-ui@latest init` with slate theme",
+      "Install shadcn components: button, card, dialog, input, badge, table, tabs, sidebar",
+      "Create `lib/env.ts` with Zod schema validating all env vars",
+      "Create `components/ui/` directory structure",
+      "Add `@/` path alias to tsconfig.json"
+    ],
+    "files_to_touch": [
+      "tsconfig.json",
+      "tailwind.config.ts",
+      "next.config.ts",
+      "lib/env.ts",
+      "components/ui/"
+    ],
+    "risks": [
+      "shadcn/ui CLI version compatibility with Next.js 14 App Router — check docs before running init"
+    ],
+    "estimated_effort": "M"
+  },
+  "chat_path": ".os/02_state/tasks/T-002/chat.jsonl",
+  "created_at": "2026-05-18T18:49:54.637Z",
+  "updated_at": "2026-05-18T18:49:54.637Z"
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "id": "T-004",
+  "title": "Define Prisma schema and run initial database migration",
+  "tags": [
+    "database",
+    "prisma",
+    "schema"
+  ],
+  "epic_id": "E-001",
+  "status": "todo",
+  "estimate": "M",
+  "description": "Define the complete Prisma schema covering User, Matter, MatterMember, Document, DocumentChunk, DocumentExtraction, Task, and ChatMessage. Enable pgvector extension. Run the initial migration against the Postgres database.",
+  "acceptance_criteria": [
+    {
+      "text": "All 8 core models defined in prisma/schema.prisma",
+      "done": false
+    },
+    {
+      "text": "pgvector extension referenced in schema and enabled via migration SQL",
+      "done": false
+    },
+    {
+      "text": "DocumentChunk has a vector(1536) embedding field",
+      "done": false
+    },
+    {
+      "text": "Initial migration runs cleanly against the Replit Postgres instance",
+      "done": false
+    },
+    {
+      "text": "Prisma client generated and importable from lib/db/client.ts",
+      "done": false
+    }
+  ],
+  "depends_on": [
+    {
+      "id": "T-002",
+      "type": "hard"
+    }
+  ],
+  "blocks": [
+    "T-005",
+    "T-006"
+  ],
+  "plan": {
+    "steps": [
+      "Install prisma and @prisma/client",
+      "Configure DATABASE_URL in .env and Replit Secrets",
+      "Write prisma/schema.prisma with all 8 models",
+      "Add pgvector extension block to schema",
+      "Create lib/db/client.ts with Prisma singleton pattern",
+      "Run `prisma migrate dev --name init`",
+      "Verify migration output and generated client"
+    ],
+    "files_to_touch": [
+      "prisma/schema.prisma",
+      "lib/db/client.ts",
+      "prisma/migrations/"
+    ],
+    "risks": [
+      "pgvector must be installed on the Postgres instance — verify availability on Replit's Postgres or Neon",
+      "vector(1536) field requires raw SQL migration for pgvector — use extendedPrismaClient or raw migration"
+    ],
+    "estimated_effort": "M"
+  },
+  "chat_path": ".os/02_state/tasks/T-004/chat.jsonl",
+  "created_at": "2026-05-18T18:49:54.637Z",
+  "updated_at": "2026-05-18T18:49:54.637Z"
+}

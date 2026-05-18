@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0.0",
+  "id": "T-012",
+  "title": "Polish: error boundaries, loading states, empty states, and rate limiting",
+  "tags": [
+    "polish",
+    "ux",
+    "reliability"
+  ],
+  "epic_id": "E-005",
+  "status": "todo",
+  "estimate": "M",
+  "description": "Final polish pass before launch. Add React error boundaries, loading skeletons on all data-fetching pages, meaningful empty states with onboarding CTAs, and rate limiting on AI endpoints.",
+  "acceptance_criteria": [
+    {
+      "text": "Error boundaries catch and display user-friendly errors on all major pages",
+      "done": false
+    },
+    {
+      "text": "Loading skeletons shown during data fetches on dashboard, matter detail, and document pages",
+      "done": false
+    },
+    {
+      "text": "Empty states with actionable CTAs on matter list, documents tab, and tasks tab",
+      "done": false
+    },
+    {
+      "text": "AI endpoints (extraction, chat) rate limited at 10 req/min per user",
+      "done": false
+    },
+    {
+      "text": "All AI-generated content labelled with an 'AI-generated' badge",
+      "done": false
+    }
+  ],
+  "depends_on": [
+    {
+      "id": "T-010",
+      "type": "soft"
+    }
+  ],
+  "blocks": [],
+  "plan": {
+    "steps": [
+      "Add error.tsx and global-error.tsx boundaries",
+      "Add loading.tsx skeletons for dashboard and matter pages",
+      "Build reusable EmptyState component with icon, title, description, CTA",
+      "Implement rate limiting on /api/chat and /api/documents/upload routes",
+      "Audit all AI output components and add 'AI-generated' label badge"
+    ],
+    "files_to_touch": [
+      "app/(dashboard)/error.tsx",
+      "app/(dashboard)/loading.tsx",
+      "components/ui/EmptyState.tsx",
+      "app/api/chat/[matterId]/route.ts",
+      "middleware.ts"
+    ],
+    "risks": [],
+    "estimated_effort": "M"
+  },
+  "chat_path": ".os/02_state/tasks/T-012/chat.jsonl",
+  "created_at": "2026-05-18T18:49:54.637Z",
+  "updated_at": "2026-05-18T18:49:54.637Z"
+}

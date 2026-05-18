@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "deploy_target": "replit",
+  "framework": "next",
+  "framework_version": "14",
+  "language": "typescript",
+  "language_strict": true,
+  "database": "postgres",
+  "auth": "clerk",
+  "auth_methods": [
+    "email-password",
+    "magic-link",
+    "google-oauth"
+  ],
+  "validation": "zod",
+  "validation_to_json_schema": true,
+  "agent_provider": "openai",
+  "agent_default_model": "gpt-4o",
+  "agent_byok": false,
+  "git_provider": "github",
+  "git_sync_method": "replit-github-sync",
+  "realtime_transport": "none",
+  "env_vars": [
+    "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY",
+    "CLERK_SECRET_KEY",
+    "DATABASE_URL",
+    "OPENAI_API_KEY",
+    "NEXT_PUBLIC_APP_URL"
+  ],
+  "root_scaffolding": [
+    ".replit",
+    "replit.nix",
+    "next.config.ts",
+    "tailwind.config.ts",
+    "tsconfig.json",
+    "package.json",
+    ".env.example",
+    "prisma/schema.prisma"
+  ]
+}

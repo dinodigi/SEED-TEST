@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0.0",
+  "epics": [
+    {
+      "id": "E-001",
+      "name": "Foundation & Infrastructure",
+      "milestone_id": "M1",
+      "status": "not-started",
+      "task_count": 4,
+      "done_count": 0,
+      "progress": 0,
+      "lead": null
+    },
+    {
+      "id": "E-002",
+      "name": "Case Management Core",
+      "milestone_id": "M2",
+      "status": "not-started",
+      "task_count": 3,
+      "done_count": 0,
+      "progress": 0,
+      "lead": null
+    },
+    {
+      "id": "E-003",
+      "name": "Document Ingestion & AI Extraction",
+      "milestone_id": "M3",
+      "status": "not-started",
+      "task_count": 2,
+      "done_count": 0,
+      "progress": 0,
+      "lead": null
+    },
+    {
+      "id": "E-004",
+      "name": "Document Q&A (RAG)",
+      "milestone_id": "M4",
+      "status": "not-started",
+      "task_count": 2,
+      "done_count": 0,
+      "progress": 0,
+      "lead": null
+    },
+    {
+      "id": "E-005",
+      "name": "Polish & Launch Prep",
+      "milestone_id": "M5",
+      "status": "not-started",
+      "task_count": 1,
+      "done_count": 0,
+      "progress": 0,
+      "lead": null
+    }
+  ],
+  "next_id": "E-006"
+}
