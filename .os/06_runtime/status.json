@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0.0",
-  "computed_at": "2026-05-18T18:50:00.003Z",
+  "computed_at": "2026-05-18T21:17:03.366Z",
   "phase": "Planning",
   "milestone": null,
   "milestone_progress": 0,
-  "open_tasks": 12,
+  "open_tasks": 11,
   "open_issues": 0,
   "open_suggestions": 0,
-  "workflow_runs_24h": 0,
-  "last_activity": "2026-05-18T18:49:59.799Z",
+  "workflow_runs_24h": 1,
+  "last_activity": "2026-05-18T21:17:03.331Z",
   "health": "active"
 }

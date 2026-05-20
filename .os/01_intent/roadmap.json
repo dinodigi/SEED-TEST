@@ -6,7 +6,7 @@
       "name": "Foundation",
       "target_date": "2026-06-01",
       "status": "not-started",
-      "progress": 0,
+      "progress": 0.25,
       "epic_ids": [
         "E-001"
       ]

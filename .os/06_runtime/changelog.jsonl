@@ -12,3 +12,4 @@
 {"ts":"2026-05-18T18:49:54.637Z","type":"task.created","summary":"Task created: T-012 — Polish: error boundaries, loading states, empty states, and rate limiting","by":"agent"}
 {"ts":"2026-05-18T18:49:59.799Z","type":"project.bootstrapped","summary":"Project bootstrapped: 17 files, 12 tasks, 5 epics","by":"user_3DqPzch3whZfWLrVNlDBo0lwk9J"}
 {"ts":"2026-05-18T18:50:00.017Z","type":"workflow.completed","summary":"Workflow complete: bootstrap","by":"agent"}
+{"ts":"2026-05-18T21:17:03.331Z","type":"task.completed","summary":"MCP smoke test — task started and completed via Claude Code MCP tools","by":"mcp:lexcore"}

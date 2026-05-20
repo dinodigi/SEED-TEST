@@ -3,7 +3,6 @@
   "columns": {
     "backlog": [],
     "todo": [
-      "T-001",
       "T-002",
       "T-003",
       "T-004",
@@ -18,14 +17,16 @@
     ],
     "doing": [],
     "review": [],
-    "done": [],
+    "done": [
+      "T-001"
+    ],
     "blocked": []
   },
   "tasks": [
     {
       "id": "T-001",
       "title": "Configure Replit environment (.replit, replit.nix, env vars)",
-      "status": "todo",
+      "status": "done",
       "tags": [
         "infra",
         "replit",
@@ -47,7 +48,7 @@
       ],
       "epic_id": "E-001",
       "estimate": "M",
-      "blocked": true,
+      "blocked": false,
       "has_plan": true
     },
     {

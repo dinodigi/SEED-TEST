@@ -18,3 +18,7 @@
 {"ts":"2026-05-18T18:49:54.637Z","type":"task.created","actor":"agent","target":"T-012","title":"Polish: error boundaries, loading states, empty states, and rate limiting","epic_id":"E-005"}
 {"ts":"2026-05-18T18:49:59.799Z","type":"project.bootstrapped","actor":"user_3DqPzch3whZfWLrVNlDBo0lwk9J","target":"ce3ed2e6-c233-44ed-813b-c198d8f13626","files_generated":17,"tasks_seeded":12,"epics_seeded":5,"library_entries_snapshotted":7}
 {"ts":"2026-05-18T18:50:00.017Z","type":"workflow.completed","actor":"agent","target":"bootstrap","playbook":"bootstrap","duration_ms":185794}
+{"ts":"2026-05-18T21:15:55.606Z","type":"task.updated","actor":"mcp:lexcore","target":"T-001","fields_changed":["status"]}
+{"ts":"2026-05-18T21:17:03.306Z","type":"task.updated","actor":"mcp:lexcore","target":"T-001","fields_changed":["status","acceptance_criteria"]}
+{"ts":"2026-05-18T21:17:03.331Z","type":"task.completed","actor":"mcp:lexcore","target":"T-001","title":"Configure Replit environment (.replit, replit.nix, env vars)","epic_id":"E-001","summary":"MCP smoke test — task started and completed via Claude Code MCP tools"}
+{"ts":"2026-05-20T07:58:16.171Z","type":"mcp_token.created","actor":"user:user_3DqPzch3whZfWLrVNlDBo0lwk9J","target":"3e06dba9-7a5c-47c9-a273-45729fc8171b"}

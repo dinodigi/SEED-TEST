@@ -8,25 +8,25 @@
     "setup"
   ],
   "epic_id": "E-001",
-  "status": "todo",
+  "status": "done",
   "estimate": "S",
   "description": "Set up the Replit run configuration, Nix environment with Node.js 20, and document all required environment variables in .env.example. Ensure `npm run dev` starts the Next.js dev server correctly.",
   "acceptance_criteria": [
     {
       "text": ".replit file configures run command to `npm run dev`",
-      "done": false
+      "done": true
     },
     {
       "text": "replit.nix pins Node.js 20 and required system packages",
-      "done": false
+      "done": true
     },
     {
       "text": ".env.example documents all required env vars with descriptions",
-      "done": false
+      "done": true
     },
     {
       "text": "App starts successfully on Replit with no errors",
-      "done": false
+      "done": true
     }
   ],
   "depends_on": [],
@@ -52,5 +52,5 @@
   },
   "chat_path": ".os/02_state/tasks/T-001/chat.jsonl",
   "created_at": "2026-05-18T18:49:54.637Z",
-  "updated_at": "2026-05-18T18:49:54.637Z"
+  "updated_at": "2026-05-18T21:17:03.306Z"
 }
