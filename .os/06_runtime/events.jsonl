@@ -22,3 +22,4 @@
 {"ts":"2026-05-18T21:17:03.306Z","type":"task.updated","actor":"mcp:lexcore","target":"T-001","fields_changed":["status","acceptance_criteria"]}
 {"ts":"2026-05-18T21:17:03.331Z","type":"task.completed","actor":"mcp:lexcore","target":"T-001","title":"Configure Replit environment (.replit, replit.nix, env vars)","epic_id":"E-001","summary":"MCP smoke test — task started and completed via Claude Code MCP tools"}
 {"ts":"2026-05-20T07:58:16.171Z","type":"mcp_token.created","actor":"user:user_3DqPzch3whZfWLrVNlDBo0lwk9J","target":"3e06dba9-7a5c-47c9-a273-45729fc8171b"}
+{"ts":"2026-05-20T09:35:56.944Z","type":"mcp_token.revoked","actor":"user:user_3DqPzch3whZfWLrVNlDBo0lwk9J","target":"3e06dba9-7a5c-47c9-a273-45729fc8171b"}
